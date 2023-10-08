@@ -1,8 +1,8 @@
 import './Mapbox.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import 'react-map-gl-directions/dist/style.css'
+import './react-map-gl-directions/style.css'
 import mapboxgl from 'mapbox-gl'
-import Directions from 'react-map-gl-directions'
+import Directions from './react-map-gl-directions'
 import Map, { GeolocateControl, Marker, NavigationControl, Popup, useMap } from 'react-map-gl'
 import { useContext, useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import SearchIcon from '@mui/icons-material/Search';
