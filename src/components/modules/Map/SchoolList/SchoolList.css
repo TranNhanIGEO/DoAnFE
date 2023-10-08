@@ -1,0 +1,36 @@
+.schoollist {
+    height: 100%;
+    overflow: auto;
+}
+
+.schoollist .schoollist-item {
+    border-bottom: 1px solid var(--grey-color-light);
+    padding: 1rem;
+}
+
+.schoollist .schoollist-item:last-child {
+    border-bottom: none;
+}
+
+.schoollist .schoollist-item .schoollist-title {
+    display: block;
+    font-weight: 700;
+    color: var(--grey-color);
+}
+
+.schoollist .schoollist-item .schoollist-title small {
+    font-weight: 400;
+}
+
+.schoollist .schoollist-item .schoollist-title:hover {
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
+.schoollist .schoollist-item.active {
+    background-color: var(--grey-color-light)
+}
+
+.schoollist .schoollist-item.active .schoollist-title {
+    color: var(--white-color);
+}

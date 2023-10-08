@@ -1,0 +1,14 @@
+.check-role {
+    padding-top: 1rem;
+}
+
+.check-role label {
+    margin-left: 0.5rem;
+}
+
+.homepage select {
+    border: none;
+    border: 0.05px solid #615c5c8f;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}

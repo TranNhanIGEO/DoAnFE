@@ -1,0 +1,11 @@
+.homepage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+}
+
+.homepage-container {
+    max-width: 75vw;
+    width: 100%;
+}

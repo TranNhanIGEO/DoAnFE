@@ -1,0 +1,26 @@
+.MuiTable-root {
+    border: 2px solid var(--grey-color);
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+    font-size: 1.4rem;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+}
+
+.MuiTableBody-root .MuiTableCell-root {
+    font-size: 1.2rem;
+    background-color: var(--white-color);
+    color: var(--grey-color);
+}
+
+
+@media screen and (max-width: 768px) {
+    .MuiTableHead-root .MuiTableCell-root {
+        font-size: 0.75rem;
+    }
+
+    .MuiTableBody-root .MuiTableCell-root {
+        font-size: 0.75rem;
+    }
+}
