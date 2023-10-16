@@ -7,9 +7,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logOut } from "src/redux/request/authRequest";
 import useAxiosJWT from 'src/hooks/useAxiosJWT';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { MapContext } from 'src/contexts/MapContext';
 import { getUser } from 'src/redux/reducer/authSlice';
-import { toggleSidebar } from 'src/redux/store/homeSlice';
 
 const Navbar = () => {
     const currentUser = useSelector(getUser)
@@ -17,10 +17,11 @@ const Navbar = () => {
     const axiosJWT = useAxiosJWT();
 
     const [isDarkMode, setIsDarkMode] = useState(false)
+    const {setIsCloseSidebar} = useContext(MapContext)
     const bigScrren = window.innerWidth > 768
 
     const handleCloseSidebar = () => {
-        dispatch(toggleSidebar())
+        setIsCloseSidebar(prev => !prev)
     }
 
     const handleDarkMode = () => { 
